@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{765B7885-0FB5-41BD-86C6-65F9FB054768}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>libraryAutomation</RootNamespace>
+    <AssemblyName>libraryAutomation</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_v1.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayarlar.Designer.cs">
+      <DependentUpon>ayarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapEkle.Designer.cs">
+      <DependentUpon>kitapEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uyeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyeEkle.Designer.cs">
+      <DependentUpon>uyeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapDuzenle.Designer.cs">
+      <DependentUpon>kitapDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uyeDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyeDuzenle.Designer.cs">
+      <DependentUpon>uyeDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapListe.Designer.cs">
+      <DependentUpon>kitapListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uyeListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyeListe.Designer.cs">
+      <DependentUpon>uyeListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="anaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anaEkran.Designer.cs">
+      <DependentUpon>anaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitOl.Designer.cs">
+      <DependentUpon>kayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ayarlar.resx">
+      <DependentUpon>ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapEkle.resx">
+      <DependentUpon>kitapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uyeEkle.resx">
+      <DependentUpon>uyeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapDuzenle.resx">
+      <DependentUpon>kitapDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uyeDuzenle.resx">
+      <DependentUpon>uyeDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapListe.resx">
+      <DependentUpon>kitapListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uyeListe.resx">
+      <DependentUpon>uyeListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anaEkran.resx">
+      <DependentUpon>anaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitOl.resx">
+      <DependentUpon>kayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
